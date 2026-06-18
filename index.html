@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shashank M Kodiya | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#0f172a;
+    color:white;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+section{
+    padding:80px 0;
+}
+
+h2{
+    text-align:center;
+    font-size:2.5rem;
+    margin-bottom:50px;
+    color:#38bdf8;
+}
+
+/* Navbar */
+nav{
+    position:fixed;
+    width:100%;
+    top:0;
+    z-index:1000;
+    background:rgba(15,23,42,0.95);
+    backdrop-filter:blur(10px);
+}
+
+.nav-container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 5%;
+}
+
+.logo{
+    font-size:1.5rem;
+    font-weight:700;
+    color:#38bdf8;
+}
+
+nav ul{
+    display:flex;
+    gap:25px;
+    list-style:none;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:#38bdf8;
+}
+
+/* Hero */
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    text-align:center;
+    background:linear-gradient(135deg,#0f172a,#1e293b);
+}
+
+.hero h1{
+    font-size:4rem;
+}
+
+.hero h1 span{
+    color:#38bdf8;
+}
+
+.hero p{
+    margin:20px 0;
+    color:#cbd5e1;
+    font-size:1.1rem;
+}
+
+.btn{
+    display:inline-block;
+    padding:12px 25px;
+    margin:10px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.btn-primary{
+    background:#38bdf8;
+    color:black;
+}
+
+.btn-secondary{
+    border:2px solid #38bdf8;
+    color:#38bdf8;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+}
+
+/* About */
+.about{
+    text-align:center;
+}
+
+.about p{
+    max-width:800px;
+    margin:auto;
+    color:#cbd5e1;
+    line-height:1.8;
+}
+
+/* Skills */
+.skills-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:20px;
+}
+
+.skill-card{
+    background:#1e293b;
+    padding:25px;
+    border-radius:15px;
+    text-align:center;
+    transition:0.3s;
+}
+
+.skill-card:hover{
+    transform:translateY(-10px);
+}
+
+.skill-card h3{
+    color:#38bdf8;
+    margin-bottom:15px;
+}
+
+/* Projects */
+.projects-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:25px;
+}
+
+.project-card{
+    background:#1e293b;
+    border-radius:15px;
+    overflow:hidden;
+    transition:0.3s;
+}
+
+.project-card:hover{
+    transform:translateY(-10px);
+}
+
+.project-content{
+    padding:25px;
+}
+
+.project-content h3{
+    color:#38bdf8;
+}
+
+.project-content p{
+    color:#cbd5e1;
+    margin:15px 0;
+}
+
+.tech{
+    color:#94a3b8;
+    font-size:14px;
+}
+
+/* Education */
+.timeline{
+    max-width:900px;
+    margin:auto;
+}
+
+.timeline-item{
+    background:#1e293b;
+    margin-bottom:20px;
+    padding:20px;
+    border-left:5px solid #38bdf8;
+    border-radius:10px;
+}
+
+/* Achievement */
+.achievements{
+    text-align:center;
+}
+
+.achievement-box{
+    background:#1e293b;
+    padding:25px;
+    border-radius:15px;
+    max-width:700px;
+    margin:auto;
+}
+
+/* Contact */
+.contact{
+    text-align:center;
+}
+
+.contact p{
+    margin:10px 0;
+    color:#cbd5e1;
+}
+
+/* Footer */
+footer{
+    text-align:center;
+    padding:25px;
+    background:#020617;
+    color:#94a3b8;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:2.5rem;
+}
+
+nav ul{
+    display:none;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<div class="nav-container">
+<div class="logo">Shashank</div>
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#education">Education</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</div>
+</nav>
+
+<section class="hero">
+<div class="container">
+<h1>Hi, I'm <span>Shashank M Kodiya</span></h1>
+<p>MCA Student | MERN Stack Developer | Problem Solver</p>
+
+<p>
+Passionate about building efficient, user-focused applications and
+contributing to innovative software solutions.
+</p>
+
+<a href="#projects" class="btn btn-primary">View Projects</a>
+<a href="resume.pdf" class="btn btn-secondary">Download Resume</a>
+</div>
+</section>
+
+<section id="about">
+<div class="container about">
+<h2>About Me</h2>
+
+<p>
+I'm currently pursuing MCA at BMS Institute of Technology &
+Management with a CGPA of 8.70. I enjoy developing web
+applications using modern technologies and solving real-world
+problems through software solutions. My goal is to become
+a skilled Full Stack Developer and contribute to impactful projects.
+</p>
+
+</div>
+</section>
+
+<section id="skills">
+<div class="container">
+<h2>Skills</h2>
+
+<div class="skills-grid">
+
+<div class="skill-card">
+<h3>Languages</h3>
+<p>Java</p>
+<p>JavaScript</p>
+<p>Python</p>
+<p>PHP</p>
+<p>C</p>
+</div>
+
+<div class="skill-card">
+<h3>Frontend</h3>
+<p>React</p>
+<p>HTML5</p>
+<p>CSS3</p>
+<p>Tailwind CSS</p>
+</div>
+
+<div class="skill-card">
+<h3>Backend</h3>
+<p>Node.js</p>
+<p>Express.js</p>
+<p>PHP</p>
+</div>
+
+<div class="skill-card">
+<h3>Database & Tools</h3>
+<p>MongoDB</p>
+<p>MySQL</p>
+<p>Git</p>
+<p>GitHub</p>
+<p>Linux</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<section id="projects">
+<div class="container">
+
+<h2>Projects</h2>
+
+<div class="projects-grid">
+
+<div class="project-card">
+<div class="project-content">
+<h3>Coin Voyage</h3>
+<p>
+Real-time cryptocurrency dashboard with live API data,
+search functionality, filtering and responsive UI.
+</p>
+<p class="tech">
+React • Node.js • MongoDB • Tailwind CSS
+</p>
+</div>
+</div>
+
+<div class="project-card">
+<div class="project-content">
+<h3>Anganwadi Reporting System</h3>
+<p>
+Digital reporting system replacing manual registers with
+monthly reports and beneficiary tracking.
+</p>
+<p class="tech">
+React • Express • MongoDB • Node.js
+</p>
+</div>
+</div>
+
+<div class="project-card">
+<div class="project-content">
+<h3>Money Balancer App</h3>
+<p>
+AI-assisted expense tracker with date filtering,
+analytics and spending insights.
+</p>
+<p class="tech">
+React • Node.js • Express • MongoDB
+</p>
+</div>
+</div>
+
+<div class="project-card">
+<div class="project-content">
+<h3>Attendance Management System</h3>
+<p>
+Role-based attendance tracking application with
+report generation and secure authentication.
+</p>
+<p class="tech">
+PHP • MySQL
+</p>
+</div>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<section id="education">
+<div class="container">
+
+<h2>Education</h2>
+
+<div class="timeline">
+
+<div class="timeline-item">
+<h3>MCA - BMSIT&M</h3>
+<p>2025 - 2027</p>
+<p>CGPA: 8.70</p>
+</div>
+
+<div class="timeline-item">
+<h3>BCA</h3>
+<p>2022 - 2025</p>
+<p>CGPA: 8.70</p>
+</div>
+
+<div class="timeline-item">
+<h3>PUC Science</h3>
+<p>74.83%</p>
+</div>
+
+<div class="timeline-item">
+<h3>SSLC</h3>
+<p>87.20%</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<section>
+<div class="container achievements">
+
+<h2>Achievements</h2>
+
+<div class="achievement-box">
+<h3>🏆 Code Jam Competition</h3>
+<p>Secured 2nd Prize in Competitive Programming Event</p>
+
+<br>
+
+<h3>📜 HackerRank Certification</h3>
+<p>Python (Basic)</p>
+
+</div>
+
+</div>
+</section>
+
+<section id="contact">
+<div class="container contact">
+
+<h2>Contact</h2>
+
+<p>📱 +91 8050563255</p>
+<p>📍 Bengaluru, India</p>
+<p>📧 your-email@gmail.com</p>
+
+<br>
+
+<a href="#" class="btn btn-primary">LinkedIn</a>
+<a href="#" class="btn btn-secondary">GitHub</a>
+
+</div>
+</section>
+
+<footer>
+<p>© 2026 Shashank M Kodiya. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
